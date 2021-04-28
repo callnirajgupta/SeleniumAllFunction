@@ -10,6 +10,11 @@
 	<test name="TestNgSmoke">
 		<classes>
 			<class name="com.automation.test.LoginTest" />	
+			<class name="com.automation.test.CheckBox" />
+			<class name="com.automation.test.ContextMenu" />
+			<class name="com.automation.test.DragandDrop" />
+			<class name="com.automation.test.DropDown" />
+			<class name="com.automation.test.DynamicContent" />
 			
 		</classes>
 	</test> <!-- Test -->
