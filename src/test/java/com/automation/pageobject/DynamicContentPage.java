@@ -1,5 +1,6 @@
 package com.automation.pageobject;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -25,6 +26,11 @@ public class DynamicContentPage {
 			e.printStackTrace();
 		}
 		List<WebElement> elementsBefore= driver.findElements(CONTENTS);
+		List<String> textList= new ArrayList<String>();
+		for(int i=0;i<elementsBefore.size();i++) {
+			textList.add(elementsBefore.get(i).getText());
+		}
+	
 		
 		driver.navigate().refresh();
 		try {
@@ -34,9 +40,9 @@ public class DynamicContentPage {
 			e.printStackTrace();
 		}
 		List<WebElement> elementsAfter= driver.findElements(CONTENTS);
-		for(int i=0;i<elementsBefore.size();i++) {
-			
-			Assert.assertNotEquals(elementsBefore.get(i).getText(), elementsAfter.get(i).getText(), "content is matching");
+		for(int i=0;i<elementsAfter.size();i++) {
+		
+			Assert.assertTrue(!textList.contains(elementsAfter.get(i).getText()), "content is matching");
 		}
 		
 	}
