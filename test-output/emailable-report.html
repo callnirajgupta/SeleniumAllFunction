@@ -8,11 +8,47 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">17,809</td><td></td><td></td></tr>
+<tr><th colspan="7">Suite1</th></tr>
+<tr><td><a href="#t0">TestNgSmoke</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">5</td><td class="num">16,409</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automation.test.DynamicContent</td><td><a href="#m0">DropDownTest</a></td><td rowspan="1">1619625564395</td><td rowspan="1">15680</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestNgSmoke &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.automation.test.CheckBox</td><td><a href="#m0">Checkboxes</a></td><td rowspan="1">1619717994770</td><td rowspan="1">1</td></tr><tr class="failedodd"><td rowspan="1">com.automation.test.ContextMenu</td><td><a href="#m1">Checkboxes</a></td><td rowspan="1">1619717996698</td><td rowspan="1">4</td></tr><tr class="failedeven"><td rowspan="1">com.automation.test.DragandDrop</td><td><a href="#m2">DragDrop</a></td><td rowspan="1">1619717998480</td><td rowspan="1">1</td></tr><tr class="failedodd"><td rowspan="1">com.automation.test.DropDown</td><td><a href="#m3">DropDownTest</a></td><td rowspan="1">1619718000336</td><td rowspan="1">2</td></tr><tr class="failedeven"><td rowspan="1">com.automation.test.DynamicContent</td><td><a href="#m4">DynamicContentTest</a></td><td rowspan="1">1619718002212</td><td rowspan="1">2</td></tr><tr><th colspan="4">TestNgSmoke &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.automation.test.LoginTest</td><td><a href="#m5">LoginFailure</a></td><td rowspan="1">1619717988562</td><td rowspan="1">1339</td></tr><tr class="passedeven"><td><a href="#m6">loginSuccess</a></td><td rowspan="1">1619717991703</td><td rowspan="1">1227</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.automation.test.DynamicContent#DropDownTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestNgSmoke</h2><h3 id="m0">com.automation.test.CheckBox#Checkboxes</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.automation.test.CheckBox.Checkboxes(CheckBox.java:22)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.automation.test.ContextMenu#Checkboxes</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.automation.test.ContextMenu.Checkboxes(ContextMenu.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.automation.test.DragandDrop#DragDrop</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.automation.test.DragandDrop.DragDrop(DragandDrop.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.automation.test.DropDown#DropDownTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.automation.test.DropDown.DropDownTest(DropDown.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.automation.test.DynamicContent#DynamicContentTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at com.automation.test.DynamicContent.DynamicContentTest(DynamicContent.java:15)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.automation.test.LoginTest#LoginFailure</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.automation.test.LoginTest#loginSuccess</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

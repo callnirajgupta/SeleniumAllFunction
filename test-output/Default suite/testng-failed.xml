@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automation.test.DynamicContent">
+      <class name="com.automation.test.NotificationMessage">
         <methods>
-          <include name="DropDownTest"/>
+          <include name="NotificationMessageTest"/>
           <include name="beforeSuite"/>
           <include name="logout"/>
           <include name="beforemethod"/>
         </methods>
-      </class> <!-- com.automation.test.DynamicContent -->
+      </class> <!-- com.automation.test.NotificationMessage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

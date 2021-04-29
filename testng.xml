@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite1"  parallel="false"
-	preserve-order="false" >
+<suite name="Suite1" thread-count="1" parallel="tests">
 <!-- <listeners>
       <listener class-name="com.ingCapgemini.testngproject.testngsupport.ActionAfterFailePassTestFromTestNG"/>
        <listener class-name="com.ingCapgemini.testngproject.testngsupport.RetryListener"/>
