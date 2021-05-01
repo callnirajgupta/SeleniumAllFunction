@@ -1,5 +1,6 @@
 package com.automation.test;
 
+import java.awt.AWTException;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.annotations.Test;
@@ -10,7 +11,7 @@ import com.automation.pageobject.LoginPage;
 public class DragandDrop extends BaseTest {
 	
 	@Test
-	public void DragDrop() {
+	public void DragDrop() throws AWTException, InterruptedException {
 		//driver.get("http://localhost:7080/login");
 		driver.get(configProperties.getProperty("BaseUrl")+"/drag_and_drop");
 		driver.manage().window().maximize();

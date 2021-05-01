@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>TestNgSmoke</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 29 23:09:46 IST 2021</td>
+<td>Started on:</td><td>Sat May 01 12:08:45 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>16 seconds (16409 ms)</td>
+<tr><td>Total time:</td><td>453 seconds (453239 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,175 +75,77 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.automation.test.CheckBox.Checkboxes()'><b>Checkboxes</b><br>Test class: com.automation.test.CheckBox</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.automation.test.CheckBox.Checkboxes(CheckBox.java:22)
+<td title='com.automation.test.Iframe.IframeTest()'><b>IframeTest</b><br>Test class: com.automation.test.Iframe</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;iframe id=&quot;mce_0_ifr&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot; title=&quot;Rich Text Area. Press ALT-0 for help.&quot; class=&quot;tox-edit-area__iframe&quot; cd_frame_id_=&quot;c7231acdd497d44f7d7f64706af4c5e6&quot;&gt;&lt;/iframe&gt; is not clickable at point (768, 194). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-GDMII1S&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64651}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 80bc45a88f9363d5b4db5a00f0978dae
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.automation.pageobject.IframePage.swicthFrameAndType(IframePage.java:23)
+	at com.automation.test.Iframe.IframeTest(Iframe.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1099674206", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1099674206'><pre>java.lang.NullPointerException
-	at com.automation.test.CheckBox.Checkboxes(CheckBox.java:22)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace91113693", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace91113693'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;iframe id=&quot;mce_0_ifr&quot; frameborder=&quot;0&quot; allowtransparency=&quot;true&quot; title=&quot;Rich Text Area. Press ALT-0 for help.&quot; class=&quot;tox-edit-area__iframe&quot; cd_frame_id_=&quot;c7231acdd497d44f7d7f64706af4c5e6&quot;&gt;&lt;/iframe&gt; is not clickable at point (768, 194). Other element would receive the click: &lt;p&gt;...&lt;/p&gt;
+  (Session info: chrome=90.0.4430.93)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-GDMII1S&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.93, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:64651}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 80bc45a88f9363d5b4db5a00f0978dae
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.automation.pageobject.IframePage.swicthFrameAndType(IframePage.java:23)
+	at com.automation.test.Iframe.IframeTest(Iframe.java:20)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </pre></div></td>
-<td>0</td>
-<td>com.automation.test.CheckBox@4e3958e7</td></tr>
-<tr>
-<td title='com.automation.test.ContextMenu.Checkboxes()'><b>Checkboxes</b><br>Test class: com.automation.test.ContextMenu</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.automation.test.ContextMenu.Checkboxes(ContextMenu.java:15)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace388475552", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace388475552'><pre>java.lang.NullPointerException
-	at com.automation.test.ContextMenu.Checkboxes(ContextMenu.java:15)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></div></td>
-<td>0</td>
-<td>com.automation.test.ContextMenu@77f80c04</td></tr>
-<tr>
-<td title='com.automation.test.DragandDrop.DragDrop()'><b>DragDrop</b><br>Test class: com.automation.test.DragandDrop</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.automation.test.DragandDrop.DragDrop(DragandDrop.java:15)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1008314510", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1008314510'><pre>java.lang.NullPointerException
-	at com.automation.test.DragandDrop.DragDrop(DragandDrop.java:15)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></div></td>
-<td>0</td>
-<td>com.automation.test.DragandDrop@1dac5ef</td></tr>
-<tr>
-<td title='com.automation.test.DropDown.DropDownTest()'><b>DropDownTest</b><br>Test class: com.automation.test.DropDown</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.automation.test.DropDown.DropDownTest(DropDown.java:15)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace133106156", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace133106156'><pre>java.lang.NullPointerException
-	at com.automation.test.DropDown.DropDownTest(DropDown.java:15)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></div></td>
-<td>0</td>
-<td>com.automation.test.DropDown@5c90e579</td></tr>
-<tr>
-<td title='com.automation.test.DynamicContent.DynamicContentTest()'><b>DynamicContentTest</b><br>Test class: com.automation.test.DynamicContent</td>
-<td><div><pre>java.lang.NullPointerException
-	at com.automation.test.DynamicContent.DynamicContentTest(DynamicContent.java:15)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1941312594", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1941312594'><pre>java.lang.NullPointerException
-	at com.automation.test.DynamicContent.DynamicContentTest(DynamicContent.java:15)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-</pre></div></td>
-<td>0</td>
-<td>com.automation.test.DynamicContent@58ea606c</td></tr>
+<td>9</td>
+<td>com.automation.test.Iframe@25fb8912</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -253,15 +155,90 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.automation.test.DynamicControls.DynamicControlTest()'><b>DynamicControlTest</b><br>Test class: com.automation.test.DynamicControls</td>
+<td></td>
+<td>138</td>
+<td>com.automation.test.DynamicControls@18d87d80</td></tr>
+<tr>
 <td title='com.automation.test.LoginTest.LoginFailure()'><b>LoginFailure</b><br>Test class: com.automation.test.LoginTest</td>
 <td></td>
-<td>1</td>
-<td>com.automation.test.LoginTest@6ab778a</td></tr>
+<td>0</td>
+<td>com.automation.test.LoginTest@7bd4937b</td></tr>
+<tr>
+<td title='com.automation.test.DynamicLoading.DynamicLoadingTest()'><b>DynamicLoadingTest</b><br>Test class: com.automation.test.DynamicLoading</td>
+<td></td>
+<td>5</td>
+<td>com.automation.test.DynamicLoading@618425b5</td></tr>
+<tr>
+<td title='com.automation.test.NotificationMessage.NotificationMessageTest()'><b>NotificationMessageTest</b><br>Test class: com.automation.test.NotificationMessage</td>
+<td></td>
+<td>0</td>
+<td>com.automation.test.NotificationMessage@58d75e99</td></tr>
+<tr>
+<td title='com.automation.test.FloatingMenu.FloatingMenuTest()'><b>FloatingMenuTest</b><br>Test class: com.automation.test.FloatingMenu</td>
+<td></td>
+<td>0</td>
+<td>com.automation.test.FloatingMenu@5d7148e2</td></tr>
+<tr>
+<td title='com.automation.test.FileDownload.FileDownLoadTest()'><b>FileDownLoadTest</b><br>Test class: com.automation.test.FileDownload</td>
+<td></td>
+<td>0</td>
+<td>com.automation.test.FileDownload@f5acb9d</td></tr>
+<tr>
+<td title='com.automation.test.JavaScriptError.JavaScriptErrorTest()'><b>JavaScriptErrorTest</b><br>Test class: com.automation.test.JavaScriptError</td>
+<td></td>
+<td>0</td>
+<td>com.automation.test.JavaScriptError@2c35e847</td></tr>
 <tr>
 <td title='com.automation.test.LoginTest.loginSuccess()'><b>loginSuccess</b><br>Test class: com.automation.test.LoginTest</td>
 <td></td>
-<td>1</td>
-<td>com.automation.test.LoginTest@6ab778a</td></tr>
+<td>0</td>
+<td>com.automation.test.LoginTest@7bd4937b</td></tr>
+<tr>
+<td title='com.automation.test.DropDown.DropDownTest()'><b>DropDownTest</b><br>Test class: com.automation.test.DropDown</td>
+<td></td>
+<td>2</td>
+<td>com.automation.test.DropDown@1e04fa0a</td></tr>
+<tr>
+<td title='com.automation.test.DynamicContent.DynamicContentTest()'><b>DynamicContentTest</b><br>Test class: com.automation.test.DynamicContent</td>
+<td></td>
+<td>15</td>
+<td>com.automation.test.DynamicContent@1af2d44a</td></tr>
+<tr>
+<td title='com.automation.test.JavaScriptAlerts.JavaScriptAlertsTest()'><b>JavaScriptAlertsTest</b><br>Test class: com.automation.test.JavaScriptAlerts</td>
+<td></td>
+<td>0</td>
+<td>com.automation.test.JavaScriptAlerts@7c24b813</td></tr>
+<tr>
+<td title='com.automation.test.NewTab.NewTabTest()'><b>NewTabTest</b><br>Test class: com.automation.test.NewTab</td>
+<td></td>
+<td>0</td>
+<td>com.automation.test.NewTab@5ba3f27a</td></tr>
+<tr>
+<td title='com.automation.test.MouseHover.MouseHoverTest()'><b>MouseHoverTest</b><br>Test class: com.automation.test.MouseHover</td>
+<td></td>
+<td>19</td>
+<td>com.automation.test.MouseHover@21e360a</td></tr>
+<tr>
+<td title='com.automation.test.CheckBox.Checkboxes()'><b>Checkboxes</b><br>Test class: com.automation.test.CheckBox</td>
+<td></td>
+<td>20</td>
+<td>com.automation.test.CheckBox@614ca7df</td></tr>
+<tr>
+<td title='com.automation.test.DragandDrop.DragDrop()'><b>DragDrop</b><br>Test class: com.automation.test.DragandDrop</td>
+<td></td>
+<td>202</td>
+<td>com.automation.test.DragandDrop@66d3eec0</td></tr>
+<tr>
+<td title='com.automation.test.ContextMenu.ContextMenuTest()'><b>ContextMenuTest</b><br>Test class: com.automation.test.ContextMenu</td>
+<td></td>
+<td>0</td>
+<td>com.automation.test.ContextMenu@4738a206</td></tr>
+<tr>
+<td title='com.automation.test.FileUploading.FileUpLoadingTest()'><b>FileUpLoadingTest</b><br>Test class: com.automation.test.FileUploading</td>
+<td></td>
+<td>0</td>
+<td>com.automation.test.FileUploading@4fb3ee4e</td></tr>
 </table><p>
 </body>
 </html>

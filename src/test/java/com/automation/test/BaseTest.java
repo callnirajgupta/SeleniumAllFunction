@@ -34,7 +34,7 @@ public class BaseTest {
 	
 	public static String reportName;
 	public WebDriver driver;
-	public Properties configProperties;
+	public static Properties configProperties;
 	private static final String configFile = System.getProperty("user.dir")+ "/src/test/resources/config.properties";
 	
 	@BeforeSuite()

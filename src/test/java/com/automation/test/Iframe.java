@@ -16,7 +16,6 @@ public class Iframe extends BaseTest{
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		IframePage.validateIframeHeader(driver);
-		Thread.sleep(5000);
 		IframePage.swicthFrameAndType(driver);
 		
 		

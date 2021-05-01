@@ -7,7 +7,7 @@
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
   </listeners> --> 
 	<test name="TestNgSmoke">
-		<classes>
+		<!-- <classes>
 			<class name="com.automation.test.LoginTest" />	
 			<class name="com.automation.test.CheckBox" />
 			<class name="com.automation.test.ContextMenu" />
@@ -15,7 +15,10 @@
 			<class name="com.automation.test.DropDown" />
 			<class name="com.automation.test.DynamicContent" />
 			
-		</classes>
+		</classes> -->
+		<packages>
+            <package name="com.automation.test"/>
+        </packages>
 	</test> <!-- Test -->
 	
 </suite> <!-- Suite -->
