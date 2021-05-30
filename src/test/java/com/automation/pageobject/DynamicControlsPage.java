@@ -58,6 +58,7 @@ public class DynamicControlsPage {
 		 WebDriverWait wait=new WebDriverWait(driver, 10);
 		 wait.until(ExpectedConditions.invisibilityOfElementLocated(DISABLED_BTN));
 		 Assert.assertFalse(driver.findElement(TEXT_BOX).isEnabled(), "Input box is not disableds");
+		
 	}
 	
 

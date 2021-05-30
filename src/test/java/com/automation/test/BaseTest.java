@@ -48,7 +48,20 @@ public class BaseTest {
 	@BeforeMethod()
 	public void  beforemethod(){
 		WebDriverManager.chromedriver().setup();
-        driver= new ChromeDriver();
+		//String downloadFilepath = System.getProperty("user.dir")+"/download";
+		
+		File folder=new File("download");
+	    folder.mkdir();
+		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+		chromePrefs.put("profile.default_content_settings.popups", 0);
+		chromePrefs.put("download.default_directory", folder.getAbsolutePath());
+		ChromeOptions options = new ChromeOptions();
+		options.setExperimentalOption("prefs", chromePrefs);
+		DesiredCapabilities cap = DesiredCapabilities.chrome();
+		cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+		cap.setCapability(ChromeOptions.CAPABILITY, options);
+		//WebDriver driver = new ChromeDriver(cap);
+        driver= new ChromeDriver(cap);
 		}
 	
 	@AfterMethod()
