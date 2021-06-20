@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automation.test.DragandDrop">
+      <class name="com.automation.test.SoftAssertion">
         <methods>
-          <include name="logout"/>
-          <include name="beforemethod"/>
-          <include name="beforeSuite"/>
-          <include name="DragDrop"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.automation.test.DragandDrop -->
+      </class> <!-- com.automation.test.SoftAssertion -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
